@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "repo": "bench-worker-isolation-and-ui-jank",
+    "commit": "d901399",
+    "timestamp": "2026-04-22T06:14:57.601Z",
+    "owner": "ai-webgpu-lab",
+    "track": "benchmark",
+    "scenario": "worker-isolation-main",
+    "notes": "scenario=main; timerLagP95=22.8; inputLagP95=0.2; workerRttP95=0; rounds=40; burnMs=14; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-04-22T06:14:57.732Z",
+      "captured_by": "zzragida"
+    }
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 16,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "not-applicable",
+      "required_features": [],
+      "limits": {}
+    },
+    "backend": "mixed",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "unknown"
+  },
+  "workload": {
+    "kind": "graphics",
+    "name": "worker-isolation-jank-harness",
+    "input_profile": "40x14ms-burn"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 865.8,
+      "init_ms": 728.4,
+      "success_rate": 1,
+      "peak_memory_note": "16 GB reported by browser",
+      "error_type": ""
+    },
+    "graphics": {
+      "avg_fps": 59.99,
+      "p95_frametime_ms": 16.8,
+      "scene_load_ms": 728.4,
+      "resolution_scale": 1,
+      "taa_enabled": false,
+      "visual_artifact_note": "scenario=main; timerLagP95=22.8; inputLagP95=0.2; workerRttP95=0; rounds=40; burnMs=14"
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-main-thread.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/bench-worker-isolation-and-ui-jank/",
+    "screenshots": [
+      "./reports/screenshots/01-main-thread.png"
+    ]
+  }
+}
